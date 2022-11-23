@@ -5,6 +5,8 @@ let gasPrice = 5.45;
 let kmPerLiter = 11.5;
 let distance = 250;
 
+
+
 let tripCost = (distance/kmPerLiter)*gasPrice;
 
-console.log(tripCost);
+console.log("Custo total da viagem: R$ "+tripCost.toFixed(2));
