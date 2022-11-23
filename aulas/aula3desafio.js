@@ -1,7 +1,7 @@
 /* Calcular médio e exibir resultado se aprovado ou não */
 
-const nota1 = 7;
-const nota2 = 9;
+const nota1 = 8;
+const nota2 = 10;
 const nota3 = 7;
 
 const media = (nota1+nota2+nota3)/3;
@@ -16,13 +16,16 @@ console.log("A nota 3 é: "+nota3);
 console.log("A média do semestre é: "+media.toFixed(2));
 
 /* Resultado */
+console.log("=========== RESULTADO ============");
 
-if (media>7) {
+if (media>7 && media<=10) {
     console.log("O aluno foi APROVADO ! (～￣▽￣)～");
 } else if (media<5) {
     console.log("O aluno foi REPROVADO ! (* ￣︿￣)");
-} else {
+} else if (media<=7 && media >=5) {
     console.log("O aluno está em RECUPERAÇÃO... （︶^︶）");
+} else {
+    console.log("Deu algo errado! Confira as notas... O.O");
 }
 
 console.log("==================================");
