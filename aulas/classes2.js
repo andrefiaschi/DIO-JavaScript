@@ -28,6 +28,8 @@ class carro {
 
 const peugeot = new carro('Peugeot','Branco',13);
 
-
-
 peugeot.gastoTotal(450,4.5);
+
+const citroen = new carro('Citroen','Preto', 15);
+
+citroen.gastoTotal(250,5);
